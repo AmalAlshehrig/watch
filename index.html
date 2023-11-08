@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+rel="stylesheet"
+/>
+<style>
+    .whach-container{
+    width: 25vw;
+    height: 60vh;
+    border: 1px solid black;
+}
+.time{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.watch-selections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6px;
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid black;
+    background-color: #F8F8F8;
+}
+.text-container{
+   align-items: center;
+    width: 25vw;
+   border: 1px solid black;
+   padding: 10px;
+
+}
+.colors-container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+    gap: 6px; 
+}
+.colors{
+    height: 7vh;
+    width: 4vw;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+</style>
+    <title>Watch Store</title>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZiQcHu03rkTsaOsgweuwU1opiKvbcbHkJOg&usqp=CAU"
+            height="20"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHRR3hmaWGnKRU1flnUvukPsjQ6KFG2iKkQ&usqp=CAU"
+              class="rounded-circle"
+              height="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <!--header-->
+  <div id="main" class="p-5">
+    <div class=" whach-container" style="background-color: #F8F8F8;">
+        <div class="row">
+        <div id="change-img" class="col d-flex border" style="background-image:url('PTgQlim.png') ; height: 60vh;width: 20vw; background-size:contain ;background-repeat: no-repeat; flex-wrap: wrap; justify-content: center;">
+            <div class="time">
+                <h5><span id="time" style="color: white;"> </span></h5>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="HeaderButton" style="display: flex; justify-content: space-evenly; flex-direction: column;">
+        <button id="button1" style="border:none; background-color: #CA3D22; height: 10vh; width: 10vw;"></button>
+        <button id="button2" style="border:none; background-color: #23211F; height: 10vh; width: 10vw;"></button>
+        <button id="button3" style="border:none; background-color: #8A5362; height: 10vh; width: 10vw;"></button>
+        <button id="button4" style="border:none; background-color: #E9C7BE; height: 10vh; width: 10vw;"></button>
+        <button id="button5" style="border:none; background-color: #565681; height: 10vh; width: 10vw;"></button>
+    </div>
+  </div>
+    <!--header-->
+</body>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+<script src="script.js"></script>
+</html>
